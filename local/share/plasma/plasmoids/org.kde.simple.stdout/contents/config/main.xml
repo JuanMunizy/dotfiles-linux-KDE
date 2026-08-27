@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="www.kde.org">
+    <group name="Settings">
+        <entry name="command" type="String"><default>echo -e "Seconds:\n$(date +%S)"</default></entry>
+        <entry name="updateInterval" type="Int"><default>2</default></entry>
+        <entry name="showIcon" type="Bool"><default>true</default></entry>
+        <entry name="iconName" type="String"><default>utilities-terminal-symbolic</default></entry>
+    </group>
+</kcfg>

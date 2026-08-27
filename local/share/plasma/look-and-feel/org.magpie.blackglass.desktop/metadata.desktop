@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment=Black Glass
+Name=Black Glass
+X-KDE-PluginInfo-Author=Mark Whittaker
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-Email=phobian@tutanota.com
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL-2.0+
+X-KDE-PluginInfo-Name=org.magpie.blackglass.desktop
+X-KDE-PluginInfo-Version=4.0
+X-KDE-PluginInfo-Website=https://www.pling.com/u/phob1an
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+X-KPackage-Dependencies=kns://aurorae.knsrc/api.kde-look.org/2143397,kns://colorschemes.knsrc/api.kde-look.org/1430933,kns://plasma-themes.knsrc/api.kde-look.org/1430935,kns://wallpaper.knsrc/api.kde-look.org/2143406,kns://sddmtheme.knsrc/api.kde-look.org/2183606
+

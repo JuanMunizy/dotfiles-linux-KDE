@@ -1,0 +1,29 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "phobian@tutanota.com",
+                "Name": "Mark Whittaker"
+            }
+        ],
+        "Category": "Plasma Look And Feel",
+        "Description": "Black Glass",
+        "EnabledByDefault": true,
+        "Id": "org.magpie.blackglass.desktop",
+        "License": "GPL-2.0+",
+        "Name": "Black Glass",
+        "ServiceTypes": [
+            "Plasma/LookAndFeel"
+        ],
+        "Version": "4.0",
+        "Website": "https://www.pling.com/u/phob1an/"
+    },
+    "X-KPackage-Dependencies": [
+    "kns://aurorae.knsrc/api.kde-look.org/2143397",
+    "kns://colorschemes.knsrc/api.kde-look.org/1430933",
+    "kns://plasma-themes.knsrc/api.kde-look.org/1430935",
+    "kns://wallpaper.knsrc/api.kde-look.org/2143406",
+    "kns://sddmtheme.knsrc/api.kde-look.org/2183606"
+    ]
+}

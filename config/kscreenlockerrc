@@ -1,0 +1,9 @@
+[Daemon]
+Autolock=false
+Timeout=0
+
+[Greeter][Wallpaper]
+plugin=luisbocanegra.smart.video.wallpaper.reborn
+
+[Greeter][Wallpaper][luisbocanegra.smart.video.wallpaper.reborn][General]
+VideoUrls=file:///home/juan/Videos/Wallpapers/digital-gaze-8642.mp4

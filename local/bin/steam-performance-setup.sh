@@ -1,0 +1,35 @@
+#!/bin/bash
+# ========================================
+# Steam - Configuração de Performance
+# Opções de Inicialização Padrão
+# ========================================
+
+echo "=== Configuração de Performance Steam ==="
+echo ""
+echo "Adicione estas opções de inicialização em cada jogo no Steam:"
+echo "(Clique direito > Propriedades > General > Launch Options)"
+echo ""
+echo "--- Opção Básica (GameMode) ---"
+echo "gamemoderun %command%"
+echo ""
+echo "--- Opção com MangoHud ---"
+echo "gamemoderun mangohud %command%"
+echo ""
+echo "--- Opção Full (GameMode + MangoHud + DXVK) ---"
+echo "DXVK_ASYNC=1 gamemoderun mangohud %command%"
+echo ""
+echo "=========================================="
+echo "Configurações do Steam otimizadas!"
+echo ""
+echo "Para forçar Proton Experimental em todos os jogos:"
+echo "  Steam > Configurações > Compatibilidade"
+echo "  Ative 'Forçar o uso de uma ferramenta de compatibilidade'"
+echo "  Selecione 'Proton Experimental'"
+echo ""
+echo "Para habilitar FSR (FidelityFX) em jogos Wine/Proton:"
+echo "  Adicione: WINE_FULLSCREEN_FSR=1 antes do %command%"
+echo "  Exemplo: gamemoderun WINE_FULLSCREEN_FSR=1 mangohud %command%"
+echo ""
+echo "Atalho para ativar/desativar MangoHud em tempo real:"
+echo "  Shift+F12 (padrão)"
+echo ""

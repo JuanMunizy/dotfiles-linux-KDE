@@ -1,0 +1,23 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "varlesh@gmail.com",
+                "Name": "Alexey Varfolomeev"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Output of information on command",
+        "Description[ru]": "Вывод информации по команде",
+        "Icon": "utilities-terminal",
+        "Id": "org.kde.simple.stdout",
+        "License": "MIT",
+        "Name": "Simple STDOUT",
+        "Name[ru]": "Простой STDOUT",
+        "Version": "0.1",
+        "Website": "https://github.com"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-NotificationAreaCategory": "SystemServices",
+    "KPackageStructure": "Plasma/Applet"
+}

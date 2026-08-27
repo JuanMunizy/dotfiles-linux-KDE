@@ -1,0 +1,261 @@
+var plasma = getApiVersion(1);
+
+var layout = {
+    "desktops": [
+        {
+            "applets": [
+            ],
+            "config": {
+                "/": {
+                    "ItemGeometriesHorizontal": "",
+                    "formfactor": "0",
+                    "immutability": "1",
+                    "lastScreen": "0",
+                    "wallpaperplugin": "org.kde.image"
+                },
+                "/ConfigDialog": {
+                    "DialogHeight": "540",
+                    "DialogWidth": "720"
+                },
+                "/Configuration": {
+                    "PreloadWeight": "0"
+                },
+                "/General": {
+                    "ToolBoxButtonState": "topcenter",
+                    "ToolBoxButtonX": "754",
+                    "ToolBoxButtonY": "30",
+                    "sortMode": "-1"
+                },
+                "/Wallpaper/org.kde.image/General": {
+                    "Image": "file:///home/mark/Downloads/c5789644cf0a357c2130abb6fa4f1da37e4d8000.jpg"
+                }
+            },
+            "wallpaperPlugin": "org.kde.image"
+        }
+    ],
+    "panels": [
+        {
+            "alignment": "center",
+            "applets": [
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "0"
+                        },
+                        "/Configuration/General": {
+                            "launchers": "file:///usr/lib/waterfox/waterfox?iconData=iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAMJ0lEQVRoge2Za5BlVXXHf2ufc-6re2Z6mh4YGILBYaLIgDwDJCaQaAilEUMsphQIDL6CiSYhZqSIljACBlFhFCioCCb4SAo0pUIVUZQiZREMCQ9FxCAZGF7z6J7pvn37cR9n77XyYZ_TfXtmYGbIpPKFXbX73tv3nLX_6_Vf66wLr63X1v9qyf83gA3j9pbliX64BhOttrv0guUysy_3_58qcNuMHeISjnGG1xoPXCTS6f_-b0bt2EFnjw05qAj04D9HhuTUNSJhb89I9z9s2DBrhw2Ifk6wdwOJCliHsVva9tcX1-Wr5XVt03N9ELoGCeDhpOe38Trgmb09y-1v8J-cstNztafaJmu6RtIz6Bl0jWU9s9uvm7ETy2tzdfd3DCYDTARoBVoetu3LeftVgT-ZtFXTyv0tldqUCtMGMwqzCjMG0yo0Ax8or7_xYPkXRf4qwH_l8FAQ-e3P72MO7NcQannu9gLBQd0gEyEVwCAQPdGBLf333Lhcrgeuf7Vn7jcF3j5qZ7aVN5gDr9ARyCTGNoACueGnEm7aX2fCflRAhXNzwBRygVSicAcgEIxmM-fMe5bL9v11JuxPBYxjIVraA4lFjnZCmPHcOm186sHlMrq_zivXq1bg_WbDt4mMl58FlhpggBoEYTQ1Nkx2-dq_Hiov9t_7ra4dlSWszGBRAq1awhOniTz7anDscyG7sNs9yiXJdxRW5CY3_WOWrAP4va32C3G8EUCEay3w6Xv7GOU-s1-fDroWkTOqsLLMDwckAg7uFuRPT5GFyu6zApXHx4-2PFRyl27kuKXNnb9_dzf8N8bKELkdE3f49-qy6Yxt9jMTVifwju8dKPeU13_e7E2nmv3tduOsukCF-dxICyWCxdxBGPdOjv9Nkef6z7z8SzsWq9VWJZnltm3gifXrRcvv5upA_cmxv6z9bPsmUX1cTB7OevpC9uCOW_n-1oHymrd27Nd29Fg5kcNEDuM9_FjONIAz7kiUa_rBv2XWPrZK7eddOGuxQB2oAhlQE3AG7S60O9DLoddjuArvKO__6Jesuu6Lkzd3yV4ITh_2aj_VZdObPnlja90CD1Se3H6bC_Y-LTLQghSvYIGNYVSPZc2B0ye27fWdWdvoIqvQU9vw9LLkkt259tCWfe2yup1_WgpjFoGX4ZIBbQ9TswZAlgrOQSXlgUWpvGu1yPjay5-tLVky_Gji5MjUxXudCAJIjJtvXPWRRee7ypPbzpZg7zMlVpudXiXISmruKwAP1-WZCZNNO3rRA9O5-_ruwK-YtruOTjn_hBRaJXiJOwOmujDaNLxCkgBi4OyOUzP3W6sLYsjqwzercKSaESwSg5qhZgQ1gtp5l94wea7Du0vxYL7P-tHyoIIpJJmcw3fHDgGYqfAXU16YDsKWLj_fGfzR0_b37cA7j3BwAJGVRKKrq0Cza2yZUJAIXgTEcd1p1eQ9pYwLLmsd4FLWqhbANXrcF7t8H5R1Ds9RFpgLGTzxisD8VsDLZQDNxXKXr3F1JzAN1BaAb9laM9YGYEDil1aAPwSw3HhxTHEODsiMFalxcMoVp9eSj_XLSYZ1XdBo-bgt7p0U8coqqTw02kRZYipzYTNn_VB-FlBynWgt5qLDY0__ko0wQYfVMg1wwrgt6WQ0AbYqnJ7BTXXDERX4cgee3xz444aR1B3PVYQfweduaiQf7wd_zp2W1J5ptlInjUQgEYk0WxiipM2i5rRScvmxGWeiBZUpEArwZT7E9xmDi_8M-EIM9IUtwUzKl0tKGxF4KIcvJHByCvd54bZNgUYO4xWH4fjprN34y5GF4AFk48QHg0lDKNCKYdKXwH0KKPJoqt5dJ6pnmhb-VhaA7_eMGOusVKBvHTFhxwHnaCQVUqABfKUt3FaF9mbloLaRDAo_bCR0twc6D3Ue2VkOQPBcJg7EDDMwJ9GLZv0MhBkgukEAknvHnhbliDkPKHMJXH4u35vwR7x35Nv9h76haY8jHL0AiYHUoDdh5C95koYjG3K4Crxwb5vOtHW1MXAg50urvOUPrtxxRmry_dRFi6cSASdl-JToo_gXbr906LDo9dyuLlmoZCTzzIXPnEcUJJcrFoCftPNMOLrsg8pNBtqFfGtAUkGqQjoojD3SpT0eqB2UVAeW977YL0sD65WSaYy8SNZcITfI1ea2V70Gikoc_mPZV_FMReACXhaCn9sCyjHcMHYiwOlmqQo37wzeABLobg1YT5GqkB3gaG3yNJ_KqY4k8WGhKmt52lYCnP3nW1cH45SSfbyCV8PPAS4Uibvb6y69dU4B1oua53q8FDRaVOHSCzoHPsae5xMA25RPmbLILP7fyp6mAvm44ccDruFIBoXQNcYf65LUHa6RIBWHpI4k4xaAHHeJlhyvkTZ9qUhh_TmFAjd98wrpzSsAaDfbUFYJ668YZU1QMLNo3l44Y-hHM38ojkt2sXwKlkNvq4_dWgbpEkfziR7dHUq2NEEyQSqCpCAZb1v5rdmPWNDfV-aPjIXK8GaFN_oKWdK7tsQ9_1B_3tAEnm9Yf_Eq6kFM4kIRb-CkUR1Kv62BwTnL98V-bzSgbXB1IV2a0B5Tpn6Rkw0ncQBU7kxIPMwcnN3QrboV9JSAxecJpc8DUZEY_3znrk8ctG1XBQA1Po3vD5mirSjZCGA8UH19jSVHVuhN7RQ6KfiWkY8qUo8gpS5MPdEjdCEZcDF0MkGK6lSdhu2rUrasrlOZCDHVyspbBkDpAQWPrO_HvHCscuGyXxL4N8I88AXU2jFIhZETBqKOoWyy5j2Qbw3x2gqkQwnt5z0zG3OyAxJAsATIBCseCgxIOvDCSQPMLElIZnTXFmJ-P_aDK5b-5OUVACzI5bsA1wJdMzCwuk7jVxJ6zXnLm4Jl4HcYoWnIQKRNNWg93osNXa0ALcW4QubrarUFMwcKm48fIJ3SeFzRxKnN54Up63fGu-tg6-KR-5j0G6OE0rwGMwEZShg-tkE-a5gqZnEjiuVKvi1gCVgqSE3w07rBT9o1bpGDlJi4RX5JWhjFDMOotGDzcXVayzPSKY3pVwBXg2RaN99_9ch396wAUDui-hkmQnxmhDiRanqWHNcgW-rwLYtWL-k2BT9q6IwidSAxzMFLK5NLOh8evExSVwyJHIhg7SLmxMqmhnTG6A7Ciyc2yFoe6SpBgNzIJgOTh2bX7g7rbhXonD10--AxjWk6CuMe2srAqYtY_KYGvfGiRynBC-gM-DFFsqLuJwLY_ACrJp8VB-KA1KCr2KzFHChzDajtMEaPrPHs6YtIOkp9R07SDmx-c737yLuGbtkd1pedShy23T7b3tL7uB_3pEMptUMraEfRPB4sJpgYrurwmz1hh-KWJLiq4AbIKy5ZvOnwYpx-pyWNwW5LKkkDJ7EvcIIscxFBMUwXhVCBvCYseTGnsT2nPZzRfF12Y75KPrpPChz8lI0ki2xMaoL1DD9bmKmvn5WqYG3FP-eRqiB1h9QdriGXbDk82dAvr_GD3gdF3N8Bsa50gUWCDEsMUZuXi0DecIQKuB5kXVbMHi-b90kBgIOe9HfgWINj_oByJSCJEF70WMeQwcg80pDN296YrdidvMYP_bMovzpX3b0hIy4-vnV3c4MCyN0zv-HOejmMrzxe9-Eq6xrW0b62Yr70-q2eMKNQKQjFCRrkAy8nToO939QwNcwiEeiYYlM2j8SIIdZW6Blm_spXgrjHydyyR_Mf4_UUAyR1cRJlhrYMmzEkAzKKEOLhsTdXT3olefV7eg_iOXWutngDMWQgMlWsP0WOpO4ns7-bHPdK8vb8A0cvXKkK1jV0KqATgTAWsOkAiZZPGphACFy4J3Ga60ULSF4AE3RasUmNli-8bMGu2pO8vZqNDj_Q20rQgyinFkb8I0TKrICryDe3n1xdszfy6v_c_SeU9zCXuwWzufmBqSTSnH17ZemeZO3dT0xdvQBfVt8ifsvDYzHq-NnKh_ZKFlALlYst0LHSCwbS9-wdX915eyNrrxQYf2vtXpQP4enNtRYW2zcz26jendL8HdllEPxya2KNTKpyMoGNETzzMtW8mF08-870nj0KYh_H68P3zB4ahPeKyZEi5Jby78231f4BkZ1Jdu-WmdS-3llLKqc4kczEnjTROztrGs-_KnmvrdfWvq__AUi_FMEIsbmoAAAAAElFTkSuQmCC,applications:org.kde.dolphin.desktop,applications:org.kde.konsole.desktop,applications:org.kde.kate.desktop,applications:cantata.desktop,applications:org.kde.ktorrent.desktop,applications:org.kde.kcalc.desktop,applications:inkscape.desktop"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.icontasks"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "0"
+                        }
+                    },
+                    "plugin": "org.kde.latte.separator"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "0"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.analogclock"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "0",
+                            "localPath": "/home/mark/.local/share/plasma_icons/systemsettings (1).desktop",
+                            "url": "file:///usr/share/applications/systemsettings.desktop"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.icon"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "0"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.trash"
+                }
+            ],
+            "config": {
+                "/": {
+                    "formfactor": "2",
+                    "immutability": "1",
+                    "lastScreen": "0",
+                    "wallpaperplugin": "org.kde.image"
+                },
+                "/ConfigDialog": {
+                    "DialogHeight": "80",
+                    "DialogWidth": "1920"
+                },
+                "/Configuration": {
+                    "PreloadWeight": "0"
+                }
+            },
+            "height": 4.5,
+            "hiding": "normal",
+            "location": "bottom",
+            "maximumLength": 62.3125,
+            "minimumLength": 62.3125,
+            "offset": 0
+        },
+        {
+            "alignment": "center",
+            "applets": [
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "100"
+                        },
+                        "/Configuration/ConfigDialog": {
+                            "DialogHeight": "480",
+                            "DialogWidth": "640"
+                        },
+                        "/Configuration/General": {
+                            "appListWidth": "290",
+                            "favGridCols": "0",
+                            "searchFieldFollowsTheme": "true",
+                            "searchFieldHeight": "24",
+                            "sidebarFollowsTheme": "true",
+                            "tileModel": "W10="
+                        }
+                    },
+                    "plugin": "com.github.zren.tiledmenu"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "0"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.showdesktop"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "0"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.appmenu"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "0"
+                        },
+                        "/Configuration/General": {
+                            "length": "1568"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.panelspacer"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "15"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.systemtray"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "0"
+                        },
+                        "/Configuration/Appearance": {
+                            "enabledCalendarPlugins": "/usr/lib/qt/plugins/plasmacalendarplugins/holidaysevents.so",
+                            "showWeekNumbers": "true"
+                        },
+                        "/Configuration/ConfigDialog": {
+                            "DialogHeight": "480",
+                            "DialogWidth": "640"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.digitalclock"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "immutability": "1"
+                        },
+                        "/Configuration": {
+                            "PreloadWeight": "0"
+                        },
+                        "/Configuration/ConfigDialog": {
+                            "DialogHeight": "480",
+                            "DialogWidth": "640"
+                        },
+                        "/Configuration/General": {
+                            "show_lockScreen": "false"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.lock_logout"
+                }
+            ],
+            "config": {
+                "/": {
+                    "formfactor": "2",
+                    "immutability": "1",
+                    "lastScreen": "0",
+                    "wallpaperplugin": "org.kde.image"
+                },
+                "/ConfigDialog": {
+                    "DialogHeight": "80",
+                    "DialogWidth": "1920"
+                },
+                "/Configuration": {
+                    "PreloadWeight": "0"
+                }
+            },
+            "height": 1.875,
+            "hiding": "normal",
+            "location": "top",
+            "maximumLength": 120,
+            "minimumLength": 120,
+            "offset": 0
+        }
+    ],
+    "serializationFormatVersion": "1"
+}
+;
+
+plasma.loadSerializedLayout(layout);

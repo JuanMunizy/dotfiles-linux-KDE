@@ -1,0 +1,14 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "phobian@tutanota.com",
+                "Name": "Mark Whittaker"
+            }
+        ],
+        "Id": "BlackGlass",
+        "License": "",
+        "Name": "Black Glass"
+    },
+    "X-KDE-PlasmaImageWallpaper-AccentColor": "#595959"
+}

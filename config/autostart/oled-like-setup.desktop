@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=OLED-Like Display Setup
+Comment=Apply OLED-like gamma and vibrance settings
+Exec=/home/juan/.local/bin/oled-like-setup.sh
+Terminal=false
+X-KDE-autostart-phase=1
